@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { set } from "lodash";
 
 const initialState = {
-  isDarkMode: false,
+  isDarkMode: true,
   setting: {
     isDarkMode: true,
   },
