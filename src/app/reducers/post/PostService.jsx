@@ -1,4 +1,3 @@
-import process from 'next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss';
 import axiosApiInstance from '../../utils/api';
 
 const get = async (query = '') => {
