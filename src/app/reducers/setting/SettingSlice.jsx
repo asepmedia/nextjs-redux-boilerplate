@@ -3,6 +3,7 @@ import { set } from "lodash";
 
 const initialState = {
   isDarkMode: true,
+  darkMode: "no",
   setting: {
     isDarkMode: true,
   },
