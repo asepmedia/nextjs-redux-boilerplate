@@ -1,24 +1,20 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { set } from "lodash";
+import { createSlice } from '@reduxjs/toolkit';
+import { set } from 'lodash';
 
 const initialState = {
   isDarkMode: true,
-  darkMode: "no",
+  darkMode: 'no',
   setting: {
     isDarkMode: true,
   },
 };
 
 export const settingSlice = createSlice({
-  name: "setting",
+  name: 'setting',
   initialState,
   reducers: {
     changeThemMode: (state, value) => {
-      set(
-        state,
-        "setting.isDarkMode",
-        value.payload || initialState.setting.isDarkMode
-      );
+      set(state, 'setting.isDarkMode', value.payload || initialState.setting.isDarkMode);
     },
   },
 });

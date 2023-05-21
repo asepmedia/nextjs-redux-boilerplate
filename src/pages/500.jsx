@@ -1,6 +1,6 @@
-import { Button, Result } from "antd";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import { Button, Result } from 'antd';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 export default function Custom500() {
   const router = useRouter();
@@ -9,7 +9,7 @@ export default function Custom500() {
       <Head>
         <title>500 - Page Not Found</title>
       </Head>
-      <div className={"justify] flex h-screen items-center justify-center"}>
+      <div className={'justify] flex h-screen items-center justify-center'}>
         <Result
           status="500"
           title="500"
@@ -17,9 +17,9 @@ export default function Custom500() {
           extra={
             <Button
               type="primary"
-              className={"!bg-blue-500"}
+              className={'!bg-blue-500'}
               onClick={() => {
-                router.push("/");
+                router.push('/');
               }}
             >
               Back Home
